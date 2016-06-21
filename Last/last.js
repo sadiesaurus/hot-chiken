@@ -17,5 +17,16 @@ $(document).ready(function() {
 	$('.capital').mouseleave(function() {
 		$(this).removeClass('highlight');
 	});
-	
+	$('h5').click(function() {
+		$(this).hide('slow');
+	});
+	$('#thank-you-button').click(function() {
+		$('#thank-you-p').text(" HURRAY! YOU LOVE IT! ");
+	});
+	$('#thank-you-button').mouseenter(function() {
+		$('#thank-you-button').addClass('highlight');
+	});
+	$('#thank-you-button').mouseleave(function() {
+		$('#thank-you-button').removeClass('highlight');
+	});
 }); 
